@@ -1,0 +1,223 @@
+/* Базовые сбросы и настройки */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+body {
+    background-color: #0d1117;
+    color: #c9d1d9;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Обертка для всего контента */
+.wrapper {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Шапка */
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: 800;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+.tagline {
+    color: #8b949e;
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+/* Главный блок (Hero) */
+.hero {
+    background-color: #161b22;
+    padding: 30px 20px;
+    border-radius: 12px;
+    margin: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+.hero h1 {
+    font-size: 22px;
+    color: #ffffff;
+    margin-bottom: 12px;
+}
+
+.hero p {
+    color: #8b949e;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+/* Кнопки */
+.btn-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    transition: 0.2s;
+}
+
+.btn-wa {
+    background-color: #22c55e;
+    color: #ffffff;
+}
+
+.btn-inst {
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    color: #ffffff;
+}
+
+.btn:active {
+    transform: scale(0.97);
+}
+
+/* Общие стили для секций */
+.section {
+    margin-top: 30px;
+}
+
+.section h2 {
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 15px;
+    border-left: 3px solid #58a6ff;
+    padding-left: 10px;
+}
+
+/* Сетка карточек преимуществ */
+.card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.card {
+    background-color: #161b22;
+    padding: 18px;
+    border-radius: 12px;
+    width: calc(50% - 7.5px);
+    display: flex;
+    flex-direction: column;
+}
+
+.card-full {
+    width: 100%;
+}
+
+.card-icon {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    font-size: 15px;
+    color: #58a6ff;
+    margin-bottom: 5px;
+}
+
+.card p {
+    color: #8b949e;
+    font-size: 13px;
+}
+
+/* Услуги и цены */
+.service-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.service-card {
+    background-color: #161b22;
+    padding: 15px 18px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service-info h3 {
+    font-size: 15px;
+    color: #ffffff;
+    margin-bottom: 3px;
+}
+
+.service-info p {
+    font-size: 12px;
+    color: #8b949e;
+}
+
+.service-price {
+    background-color: #238636;
+    color: #ffffff;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+/* Этапы работы */
+.steps-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.step-card {
+    background-color: #161b22;
+    padding: 15px 18px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.step-num {
+    font-size: 18px;
+    font-weight: 800;
+    color: #58a6ff;
+}
+
+.step-card h4 {
+    font-size: 14px;
+    color: #ffffff;
+    margin-bottom: 2px;
+}
+
+.step-card p {
+    font-size: 12px;
+    color: #8b949e;
+}
+
+/* Подвал */
+footer {
+    text-align: center;
+    padding: 30px 0 10px;
+    color: #484f58;
+    font-size: 12px;
+}
